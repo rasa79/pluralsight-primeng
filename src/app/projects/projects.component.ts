@@ -46,6 +46,11 @@ export class ProjectsComponent implements OnInit {
     return !this.projectForm.valid;
   }
 
+/*   fieldErrors(field: string) {
+    let controlState = this.projectForm.controls[field];
+    return (controlState.dirty && controlState.errors) ? controlState.errors : null;
+  } */
+
   onSubmit() {
     alert(JSON.stringify(this.projectForm.value));
   }

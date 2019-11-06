@@ -7,7 +7,7 @@ import { FormGroup } from "@angular/forms";
   styleUrls: ['./fielderrors.component.css']
 })
 export class FielderrorsComponent implements OnInit {
-
+  //all of the below you can use in markup...
   @Input("form") form: FormGroup;
   @Input("field") fieldName: string;
   @Input("nicename") niceName: string;
